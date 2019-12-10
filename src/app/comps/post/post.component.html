@@ -1,0 +1,35 @@
+
+<div _ngcontent-mcf-c512="" class="component-page-header docs-primary-header"><button _ngcontent-mcf-c512="" mat-button="" class="sidenav-toggle mat-button mat-button-base"><span class="mat-button-wrapper"></span><div matripple="" class="mat-button-ripple mat-ripple"></div><div class="mat-button-focus-overlay"></div></button><h1 _ngcontent-mcf-c512="" focusonnavigation="" tabindex="-1">wolcom to page posts </h1></div>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    
+  </mat-expansion-panel>
+</mat-accordion>
+<p>post works!</p>
+
+
+
+<h1>wolcom to posts</h1>
+     <ul *ngIf="svc.data"> 
+         <li *ngFor="let p of svc.data">
+               {{p.userId}}
+               {{p.id}}
+               {{p.title}}
+               {{p.body}}
+        </li> 
+
+
+     </ul>

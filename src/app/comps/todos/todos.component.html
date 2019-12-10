@@ -1,0 +1,30 @@
+<p>todos works!</p>
+<div>
+<form [formGroup]='newtodo' (ngSubmit)='addtodo()' >
+
+    <H1> add more todo </H1>
+
+    userid <input formControlName='userId' ><br>
+     id <input formControlName='id' ><br>
+    title <input formControlName='title' ><br>
+    completed <input type="checkbox"  formControlName='completed' ><br>
+
+    <button> send</button>
+</form>
+
+
+</div>
+
+
+
+<h1> list of all todos </h1>
+
+<ul *ngIf='svc.data'>
+    <li *ngFor='let t of svc.data'>
+       userid = {{t.userId}} <br>
+       id = {{t.id}} <br>
+       title = {{t.title}} <br>
+       completed = {{t.completed}} <br>
+       
+    </li>
+</ul>

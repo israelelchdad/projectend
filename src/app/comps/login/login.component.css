@@ -1,0 +1,24 @@
+.example-form{
+    margin-top: 18%;
+    margin-left: 38%;
+
+}
+.mat-form-field {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-bottom: 4.25em;
+    background-color: burlywood;
+}
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+    padding: 23px 0;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 4.25em;
+}
+button{
+    margin-top: 0%;
+    
+    margin-left: 41.5%;
+
+}
