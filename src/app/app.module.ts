@@ -13,6 +13,9 @@ import { TodosComponent } from './comps/todos/todos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './comps/navigation/navigation.component';
 import { PostComponent } from './comps/post/post.component';
+import { PostsComponent } from './cards/posts/posts.component';
+import { Pipe1Pipe } from './pips/pipe1.pipe';
+import { AddpostComponent } from './comps/addpost/addpost.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { PostComponent } from './comps/post/post.component';
     LoginComponent,
     TodosComponent,
     NavigationComponent,
-    PostComponent
+    PostComponent,
+    PostsComponent,
+    Pipe1Pipe,
+    AddpostComponent
   ],
   imports: [
     BrowserModule,

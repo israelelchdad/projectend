@@ -1,0 +1,28 @@
+<p>addpost works!</p>
+
+<div class="example-container">
+    <form [formGroup]='newpost' >
+        <mat-form-field>
+          <input formControlName="userId" matInput placeholder="Input">
+     </mat-form-field> <br>
+
+     <mat-form-field>
+          <input formControlName="id" matInput placeholder="Input">
+     </mat-form-field> <br>
+      
+     <mat-form-field>
+            <input  formControlName="title"matInput placeholder="Input">
+       </mat-form-field> <br>
+
+    <mat-form-field>
+            <input formControlName="body" matInput placeholder="Input">
+    </mat-form-field> <br>
+
+   
+        
+        
+</form>
+<button (click)= 'additem()' mat-raised-button>Basic</button>
+      
+       
+      </div>

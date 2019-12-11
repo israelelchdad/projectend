@@ -16,3 +16,10 @@ body {
     font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     margin: 0;
 }
+p{
+    margin:8% 20% 8% 20% ;
+}
+.mat-expansion-panel{
+    margin: 1%;
+
+}
