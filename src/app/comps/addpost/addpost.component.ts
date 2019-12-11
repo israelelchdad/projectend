@@ -24,13 +24,10 @@ export class AddpostComponent implements OnInit {
 
   ngOnInit() {
   }
-  additem(){
+  addpost(){
     this.newpos=this.newpost.value
-    this.svc.data.push(this.newpos)
+     this.svc.addmoreitem(this.newpos)
     console.log(this.svc.data.length);
-    localStorage.setItem('posts',JSON.stringify(this.svc.data))
-    
-
-  }
+     }
 
 }

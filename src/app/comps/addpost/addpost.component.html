@@ -1,28 +1,25 @@
-<p>addpost works!</p>
+<h1>wolcom to page add post</h1>
 
 <div class="example-container">
     <form [formGroup]='newpost' >
         <mat-form-field>
-          <input formControlName="userId" matInput placeholder="Input">
+          <input formControlName="userId" matInput placeholder="userid">
      </mat-form-field> <br>
 
      <mat-form-field>
-          <input formControlName="id" matInput placeholder="Input">
+          <input formControlName="id" matInput placeholder="Id">
      </mat-form-field> <br>
       
      <mat-form-field>
-            <input  formControlName="title"matInput placeholder="Input">
+            <input  formControlName="title"matInput placeholder="title">
        </mat-form-field> <br>
 
     <mat-form-field>
-            <input formControlName="body" matInput placeholder="Input">
+            <input formControlName="body" matInput placeholder="body">
     </mat-form-field> <br>
 
-   
-        
-        
 </form>
-<button (click)= 'additem()' mat-raised-button>Basic</button>
+<button (click)= 'addpost()' mat-raised-button>addpost</button>
       
        
       </div>

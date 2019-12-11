@@ -25,10 +25,9 @@ export class TodosComponent implements OnInit {
   }
   addtodo(){
     let todonew:Todos=this.newtodo.value
-    this.svc.data.push(todonew)
+    this.svc.addmoreitem(todonew)
 
-    localStorage.setItem('todos',JSON.stringify(this.svc.data))
-    console.log(localStorage.getItem('alltodo'));
+    
     
   }
 
