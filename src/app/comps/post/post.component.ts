@@ -12,6 +12,7 @@ export class PostComponent implements OnInit {
   title:string=""
   body:string=""
    id:number
+   userid:number
 
   constructor(public svc:PostService, public sves:UserService, public rot:Router) {
     this.lo()
@@ -26,6 +27,13 @@ export class PostComponent implements OnInit {
   }
   pageaddpost(){
     this.rot.navigateByUrl('/addpost')
+
+  }
+  postofmyuser(){
+    this.userid=this.sves.myuser.id
+  }
+    allpost(){
+      this.userid=null
 
   }
 

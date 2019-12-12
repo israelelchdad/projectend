@@ -6,7 +6,7 @@
         <br><br>
       
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="pasword">
+          <input (input)='id=$event.target.value' matInput placeholder="pasword-id">
         </mat-form-field>
      
       </form>

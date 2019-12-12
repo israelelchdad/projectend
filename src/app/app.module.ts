@@ -16,6 +16,7 @@ import { PostComponent } from './comps/post/post.component';
 import { PostsComponent } from './cards/posts/posts.component';
 import { Pipe1Pipe } from './pips/pipe1.pipe';
 import { AddpostComponent } from './comps/addpost/addpost.component';
+import { NaviComponent } from './comps/navi/navi.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddpostComponent } from './comps/addpost/addpost.component';
     PostComponent,
     PostsComponent,
     Pipe1Pipe,
-    AddpostComponent
+    AddpostComponent,
+    NaviComponent
   ],
   imports: [
     BrowserModule,

@@ -9,30 +9,37 @@
       </mat-form-field>
       <mat-form-field class="example-full-width">
         <input (input) = 'id=$event.target.value'  matInput placeholder="serch by id" value="">
-      
+      </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input (input) ='userid=$event.target.value'  matInput placeholder="serch by userid" value="">
         </mat-form-field> 
        
   
     
        
   </form>
+
   
-  <button (click)= 'pageaddpost()' mat-raised-button>Basic</button>
+  <button (click)= 'postofmyuser()' mat-raised-button>postmyuser</button>
+  
+  <button (click)= 'pageaddpost()' mat-raised-button>addpost</button>
+
+  <button (click)= 'allpost()' mat-raised-button>allpost</button>
   
   
 
 
-  <!-- <div *ngIf = "svec.data"> -->
+   <div *ngIf = "sves.data"> -
       <p *ngIf ="svc.data" >
-<mat-accordion  *ngFor="let p of svc.data | pipe1 : title : body : id" >
+<mat-accordion  *ngFor="let p of svc.data | pipe1 : title : body : id : userid" >
 
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-         name : 
+         name : {{sves.getname(p.userId)}}
       </mat-panel-title>
       <mat-panel-description>
-         username : 
+         username : {{sves.getusername(p.userId)}} 
       </mat-panel-description>
     </mat-expansion-panel-header>
 
@@ -45,10 +52,8 @@
   </mat-expansion-panel>
 </mat-accordion>
   </p>
-  <!-- <input (input)='name=$event.target.value'><br> -->
-<!-- </div> -->
-<!-- {{svec.getname(p.userId)}}
-{{svec.getusername(p.userId)}} -->
+ 
+
 
 
 

@@ -8,6 +8,8 @@ import { User } from '../modol/user';
 })
 export class UserService extends BasicService<User> {
 
+   myuser:User
+
   constructor(public http:HttpClient) {
     super(http,'users')
 
@@ -24,4 +26,11 @@ export class UserService extends BasicService<User> {
     return usernameo.username
     
   }
+  getifuser(userid:number):any{
+
+   let u=this.data.find(user=>user.id==userid)
+   return u 
+  }
+
+
 }
