@@ -15,16 +15,13 @@ export class PostComponent implements OnInit {
    userid:number
 
   constructor(public svc:PostService, public sves:UserService, public rot:Router) {
-    this.lo()
+    
    }
 
   ngOnInit() {
   
   }
-  lo(){
-     console.log(this.sves.data);
-      
-  }
+  
   pageaddpost(){
     this.rot.navigateByUrl('/addpost')
 

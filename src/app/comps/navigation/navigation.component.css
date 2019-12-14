@@ -1,4 +1,4 @@
-.component-page-header[_ngcontent-mcf-c512] {
+/* .component-page-header[_ngcontent-mcf-c512] {
     display: flex;
     align-items: center;
     position: fixed;
@@ -10,4 +10,7 @@
 .docs-primary-header {
   
     background:#b4b8d3;
+} */
+button{
+margin: 20%;
 }
