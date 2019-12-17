@@ -21,6 +21,11 @@ export class UserService extends BasicService<User> {
      return nameo.name
      
    }
+   getid(id:number):number{
+    let num=this.data.find(user=>id==user.id)
+    return num.id
+    
+  }
    getusername(id:number):string{
     let usernameo=this.data.find(user=>id==user.id)
     return usernameo.username

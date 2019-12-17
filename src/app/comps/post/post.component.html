@@ -7,12 +7,13 @@
     <mat-form-field class="example-full-width">
         <input (input) = 'body=$event.target.value' matInput placeholder="serch by body" value="">
       </mat-form-field>
-      <mat-form-field class="example-full-width">
-        <input (input) = 'id=$event.target.value'  matInput placeholder="serch by id" value="">
-      </mat-form-field>
+   
         <mat-form-field class="example-full-width">
           <input (input) ='userid=$event.target.value'  matInput placeholder="serch by userid" value="">
         </mat-form-field> 
+           <mat-form-field class="example-full-width">
+        <input (input) = 'id=$event.target.value'  matInput placeholder="serch by id" value="">
+      </mat-form-field>
        
   
     
@@ -29,7 +30,7 @@
   
 
 
-   <div *ngIf = "sves.data"> -
+   <div *ngIf = "sves.data"> 
       <p *ngIf ="svc.data" >
 <mat-accordion  *ngFor="let p of svc.data | pipe1 : title : body : id : userid" >
 

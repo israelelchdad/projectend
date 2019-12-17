@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { TodoService } from 'src/app/services/todo.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Todos } from 'src/app/modol/todos';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-todos',
@@ -10,25 +12,21 @@ import { Todos } from 'src/app/modol/todos';
 })
 export class TodosComponent implements OnInit {
   
-  newtodo= new FormGroup ({
-    userId: new FormControl (''),
-    id: new FormControl (''),
-    title: new FormControl (''),
-    completed: new FormControl ('')
-  })
+  title:string=""
+  completed:boolean
+   id:number
+   userid:number
 
-  constructor(public svc:TodoService) {
+  constructor(public svc:TodoService,public rot:Router,public usvc:UserService) {
   
    }
 
   ngOnInit() {
   }
-  addtodo(){
-    let todonew:Todos=this.newtodo.value
-    this.svc.addmoreitem(todonew)
+  
+  pageaddtodo(){
 
-    
-    
+    this.rot.navigateByUrl('addtodo')
   }
 
 

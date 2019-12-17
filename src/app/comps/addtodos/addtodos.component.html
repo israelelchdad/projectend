@@ -1,7 +1,8 @@
-<h1>wolcom to page add post</h1>
+
+<h1>wolcom to page add todo</h1>
 
 <div class="example-container">
-    <form [formGroup]='newpost' >
+    <form [formGroup]='newtodo' >
         <mat-form-field>
           <input formControlName="userId" matInput placeholder="userid">
      </mat-form-field> <br>
@@ -14,16 +15,11 @@
             <input  formControlName="title"matInput placeholder="title">
        </mat-form-field> <br>
 
-    <mat-form-field>
-            <input formControlName="body" matInput placeholder="body">
-    </mat-form-field> <br>
-
+    
+    <!-- <mat-checkbox  (click)="complet()" class="example-margin">Checked</mat-checkbox> -->
 </form>
-<button (click)= 'addpost()' mat-raised-button>addpost</button>
+<button (click)= 'addtodo()' mat-raised-button>addtodo</button>
       
        
-      </div>
-
-
-
-      
+     </div>
+    

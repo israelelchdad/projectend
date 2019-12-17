@@ -17,6 +17,11 @@ import { PostsComponent } from './cards/posts/posts.component';
 import { Pipe1Pipe } from './pips/pipe1.pipe';
 import { AddpostComponent } from './comps/addpost/addpost.component';
 import { NaviComponent } from './comps/navi/navi.component';
+import { AddtodosComponent } from './comps/addtodos/addtodos.component';
+import { TodoComponent } from './cards/todo/todo.component';
+import { PipetodoPipe } from './pips/pipetodo.pipe';
+import { UsersComponent } from './comps/users/users.component';
+import { UserComponent } from './cards/user/user.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { NaviComponent } from './comps/navi/navi.component';
     PostsComponent,
     Pipe1Pipe,
     AddpostComponent,
-    NaviComponent
+    NaviComponent,
+    AddtodosComponent,
+    TodoComponent,
+    PipetodoPipe,
+    UsersComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
