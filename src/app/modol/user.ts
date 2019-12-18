@@ -4,10 +4,11 @@ export class User {
         "name": string
         "username": string
         "email": string
-        "address": string
+        "address": {
           "street": string
           "suite": string
           "city": string
           "zipcode": string
+        }
          
 }

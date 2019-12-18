@@ -1,0 +1,29 @@
+
+<div _ngcontent-mcf-c512="" class="component-page-header docs-primary-header"><button _ngcontent-mcf-c512="" mat-button="" class="sidenav-toggle mat-button mat-button-base"><span class="mat-button-wrapper"></span><div matripple="" class="mat-button-ripple mat-ripple"></div><div class="mat-button-focus-overlay"></div></button><h1 _ngcontent-mcf-c512="" focusonnavigation="" tabindex="-1">wolcom to page photos </h1></div> 
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+   <input (input) = 'title=$event.target.value'  matInput placeholder="serch by title" value="">
+  </mat-form-field>
+         <mat-form-field class="example-full-width">
+        <input (input) ='albumId=$event.target.value'  matInput placeholder="serch by albumId" value="">
+      </mat-form-field> 
+  <mat-form-field class="example-full-width">
+          <input (input) = 'id=$event.target.value'  matInput placeholder="serch by id" value="">
+        </mat-form-field>
+     </form>
+
+     <button (click)='pageaddphotos()' mat-raised-button>addphotos</button>
+<ul>
+
+  <li *ngFor= "let p of svc.data | pipestr : title : 'title' | pipenumber : albumId : 'albumId'  | pipenumber : id : 'id'">   
+albumId= {{p.albumId}} <br>
+photoid= {{p.id}} <br>
+title= {{p.title}} <br>
+<img src="{{p.url}}" alt="">
+
+  </li>
+</ul>
+
+
+
+

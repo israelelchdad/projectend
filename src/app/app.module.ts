@@ -22,6 +22,12 @@ import { TodoComponent } from './cards/todo/todo.component';
 import { PipetodoPipe } from './pips/pipetodo.pipe';
 import { UsersComponent } from './comps/users/users.component';
 import { UserComponent } from './cards/user/user.component';
+import { PipestrPipe } from './pips/pipestr.pipe';
+import { PipenumberPipe } from './pips/pipenumber.pipe';
+import { AdduserComponent } from './comps/adduser/adduser.component';
+import { AddphotosComponent } from './comps/addphotos/addphotos.component';
+import { PohtosComponent } from './comps/pohtos/pohtos.component';
+import { PhotosComponent } from './cards/photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +44,13 @@ import { UserComponent } from './cards/user/user.component';
     TodoComponent,
     PipetodoPipe,
     UsersComponent,
-    UserComponent
+    UserComponent,
+    PipestrPipe,
+    PipenumberPipe,
+    AdduserComponent,
+    AddphotosComponent,
+    PohtosComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,

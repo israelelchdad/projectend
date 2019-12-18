@@ -7,6 +7,9 @@ import { PostComponent } from './comps/post/post.component';
 import { AddpostComponent } from './comps/addpost/addpost.component';
 import { AddtodosComponent } from './comps/addtodos/addtodos.component';
 import { UsersComponent } from './comps/users/users.component';
+import { AdduserComponent } from './comps/adduser/adduser.component';
+import { PohtosComponent } from './comps/pohtos/pohtos.component';
+import { AddphotosComponent } from './comps/addphotos/addphotos.component';
 
 
 const routes: Routes = [
@@ -17,8 +20,13 @@ const routes: Routes = [
   {path:"addtodo",component: AddtodosComponent},
   {path:"navi",component:NavigationComponent },
   {path:"users",component: UsersComponent},
+  {path:"adduser",component: AdduserComponent},
+  {path:"photos",component: PohtosComponent},
+  {path:"addphotos",component: AddphotosComponent},
   {path: '', redirectTo:'login', pathMatch: 'full'},
   {path:"**",component:LoginComponent},
+  
+ 
  
 ];
 

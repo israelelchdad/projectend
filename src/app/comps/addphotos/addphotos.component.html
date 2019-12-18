@@ -1,0 +1,30 @@
+
+<h1>wolcom to page add photo</h1>
+
+<div class="example-container">
+    <form [formGroup]='newphoto' >
+        <mat-form-field>
+          <input formControlName="albumId" matInput placeholder="albumId">
+     </mat-form-field> <br>
+
+     <mat-form-field>
+          <input formControlName="id" matInput placeholder="Id">
+     </mat-form-field> <br>
+      
+     <mat-form-field>
+            <input  formControlName="title"matInput placeholder="title">
+       </mat-form-field> <br>
+       <mat-form-field>
+        <input  formControlName="url"matInput placeholder="url">
+   </mat-form-field> <br>
+
+
+
+    
+   
+</form>
+<button (click)= 'addphotos()' mat-raised-button>addphoto</button>
+      
+       
+     </div>
+    
