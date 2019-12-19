@@ -7,8 +7,17 @@ import { Photo } from '../modol/photo';
   providedIn: 'root'
 })
 export class PhotosService extends BasicService<Photo> {
+  tenlastphos:Photo[]=[]
 
   constructor(public http:HttpClient) { 
     super(http,"photos")
   }
+  tenlastphost(){
+
+    if (this.data){
+    for (let index = (this.data.length-10); index < this.data.length; index++) {
+      this.tenlastphos.push(this.data[index])
+      }
+  }
+}
 }

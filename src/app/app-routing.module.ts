@@ -10,6 +10,7 @@ import { UsersComponent } from './comps/users/users.component';
 import { AdduserComponent } from './comps/adduser/adduser.component';
 import { PohtosComponent } from './comps/pohtos/pohtos.component';
 import { AddphotosComponent } from './comps/addphotos/addphotos.component';
+import { HomepageComponent } from './comps/homepage/homepage.component';
 
 
 const routes: Routes = [
@@ -22,13 +23,13 @@ const routes: Routes = [
   {path:"users",component: UsersComponent},
   {path:"adduser",component: AdduserComponent},
   {path:"photos",component: PohtosComponent},
-  {path:"addphotos",component: AddphotosComponent},
+  {path:"homepage",component:HomepageComponent},
+  {path:"addphotos",component:AddphotosComponent},
   {path: '', redirectTo:'login', pathMatch: 'full'},
   {path:"**",component:LoginComponent},
+
   
- 
- 
-];
+ ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

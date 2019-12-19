@@ -4,3 +4,20 @@
 h1{
     margin: 4% 15% 0% 25%;
 }
+.component-page-header{
+    margin-top: 2.8%;
+}
+.component-page-header[_ngcontent-mcf-c512] {
+    display: flex;
+    align-items: center;
+}
+.docs-primary-header {
+    background: #3f51b5;
+}
+.docs-primary-header {
+    padding-left: 20px;
+}
+.mat-drawer-container {
+    background-color: #fafafa;
+    color: rgba(0,0,0,.87);
+}

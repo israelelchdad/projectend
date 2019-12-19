@@ -28,6 +28,7 @@ import { AdduserComponent } from './comps/adduser/adduser.component';
 import { AddphotosComponent } from './comps/addphotos/addphotos.component';
 import { PohtosComponent } from './comps/pohtos/pohtos.component';
 import { PhotosComponent } from './cards/photos/photos.component';
+import { HomepageComponent } from './comps/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { PhotosComponent } from './cards/photos/photos.component';
     AdduserComponent,
     AddphotosComponent,
     PohtosComponent,
-    PhotosComponent
+    PhotosComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

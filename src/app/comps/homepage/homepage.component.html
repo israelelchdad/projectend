@@ -1,0 +1,47 @@
+
+<h1>w</h1>
+
+
+ 
+<ul *ngIf ='psvc.data' class="ulone">
+        <li class="lione"  *ngFor="let phot of psvc.tenlastphos" >
+           
+            
+            <img src="{{phot.url}}" alt="">
+            <div class="divone"> {{phot.id}}-{{phot.title}}  </div>
+           
+    
+        </li>
+    </ul> 
+
+
+
+<h5> ברוכים הבאים לדף הבית . <br> דף הבית טוען 5000 תמונות ומציג את עשרת האחרונים (על פי דרישת לקוח) בינתיים תוכל לשוטט באתר ולנווט שוב לדף הבית </h5>
+
+<div class="divtow" *ngIf = "sves.data"> 
+    <h2>this ten last post</h2>
+    <p *ngIf ="svc.data" >
+<mat-accordion  *ngFor="let p of  svc.tenlastpos" >
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+       name : {{sves.getname(p.userId)}}
+    </mat-panel-title>
+    <mat-panel-description>
+       username : {{sves.getusername(p.userId)}} 
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+    <app-posts [post]='p'></app-posts>
+  
+</mat-expansion-panel>
+<mat-expansion-panel (opened)="panelOpenState = true"
+                     (closed)="panelOpenState = false">
+  
+</mat-expansion-panel>
+</mat-accordion>
+</p>
+
+
+

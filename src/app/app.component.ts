@@ -9,6 +9,7 @@ import { LoginService } from './services/login.service';
 export class AppComponent {
   title = 'dataprogectwithall';
   constructor(public svc:LoginService){
+    
 
   }
 }

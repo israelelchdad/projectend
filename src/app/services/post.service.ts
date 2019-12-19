@@ -7,9 +7,20 @@ import { Post } from '../modol/post';
   providedIn: 'root'
 })
 export class PostService extends BasicService<Post>{
+   tenlastpos:Post[]=[]
 
 
   constructor(http:HttpClient) {
     super(http,'posts');
+
+    
   }
+  tenlastpost(){
+
+    if (this.data){
+    for (let index = (this.data.length-10); index < this.data.length; index++) {
+      this.tenlastpos.push(this.data[index])
+      }
+  }
+}
 }
